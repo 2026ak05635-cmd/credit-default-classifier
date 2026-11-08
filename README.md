@@ -40,12 +40,12 @@ as a scikit-learn pipeline.
 GitHub repository link
 ---------------------
 
-REPLACE_WITH_YOUR_GITHUB_REPOSITORY_URL
+https://github.com/2026ak05635-cmd/credit-default-classifier
 
 Live Streamlit application
 -------------------------
 
-REPLACE_WITH_YOUR_STREAMLIT_APP_URL
+https://credit-default-classifier-ktswaqjj7szekf6n6x4zcu.streamlit.app/
 
 Models used
 -----------
@@ -80,12 +80,12 @@ table and confusion matrices from your notebook.
 
 | ML Model Name | Observation about model performance |
 | --- | --- |
-| Logistic Regression | TO COMPLETE |
-| Decision Tree | TO COMPLETE |
-| KNN | TO COMPLETE |
-| Naive Bayes | TO COMPLETE |
-| Support Vector Machine | TO COMPLETE |
-| Overall winner for this dataset | TO COMPLETE |
+| Logistic Regression | Highest precision, 0.6923, but low recall, 0.2442. Its default predictions are relatively reliable, but it misses many actual defaults. |
+| Decision Tree | 	Highest AUC, 0.7466, and accuracy 0.8143. Better default detection than Logistic Regression. |
+| KNN | Recall 0.3421 and F1 0.4416, slightly higher than Decision Tree, but lower precision and MCC. |
+| Naive Bayes | Highest recall, 0.9714, but 4,220 false positives and accuracy 0.2903. It identifies most defaults while incorrectly flagging many non-default clients. |
+| Support Vector Machine | Highest accuracy 0.8163, F1 0.4501, and MCC 0.3824. Recall remains modest at 0.3399. |
+| Overall winner for this dataset | SVM, if prioritizing accuracy, F1, and MCC on this test set. Decision Tree leads on AUC. Explain which metrics support your choice. |
 
 Application features
 --------------------
